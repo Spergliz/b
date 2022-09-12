@@ -76,3 +76,7 @@ function btnClicked() {
   }
   document.getElementById('sci-letter').innerHTML = sciLetter;
 }
+
+function Grades(A,B,C,D,){
+
+}
