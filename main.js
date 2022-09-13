@@ -17,70 +17,25 @@ function btnClicked() {
 
   // Calculate & Output Letter Grades
   // English
-  document.getElementById('eng-letter').innerHTML = PtL(engLetter)
-  document.getElementById('eng-letter').innerHTML = PtL(mathLetter)
-  document.getElementById('eng-letter').innerHTML = PtL(socLetter)
-  document.getElementById('eng-letter').innerHTML = PtL(sciLetter)
-  let engLetter;
-  if (engPercent >= 80) {
-    engLetter = 'A';
-  } else if (engPercent >= 65) {
-    engLetter = 'B';
-  } else if (engPercent >= 55) {
-    engLetter = 'C';
-  } else if (engPercent >= 50) {
-    engLetter = 'D';
-  } else {
-    engLetter = 'F';
-  }
-  document.getElementById('eng-letter').innerHTML = engLetter;
-
-  // Social Studies
-  let socLetter;
-  if (socPercent >= 80) {
-    socLetter = 'A';
-  } else if (socPercent >= 65) {
-    socLetter = 'B';
-  } else if (socPercent >= 55) {
-    socLetter = 'C';
-  } else if (socPercent >= 50) {
-    socLetter = 'D';
-  } else {
-    socLetter = 'F';
-  }
-  document.getElementById('soc-letter').innerHTML = socLetter;
-
-  // Mathematics
-  let mathLetter;
-  if (mathPercent >= 80) {
-    mathLetter = 'A';
-  } else if (mathPercent >= 65) {
-    mathLetter = 'B';
-  } else if (mathPercent >= 55) {
-    mathLetter = 'C';
-  } else if (mathPercent >= 50) {
-    mathLetter = 'D';
-  } else {
-    mathLetter = 'F';
-  }
-  document.getElementById('math-letter').innerHTML = mathLetter;
-
-  // Science
-  let sciLetter;
-  if (sciPercent >= 80) {
-    sciLetter = 'A';
-  } else if (sciPercent >= 65) {
-    sciLetter = 'B';
-  } else if (sciPercent >= 55) {
-    sciLetter = 'C';
-  } else if (sciPercent >= 50) {
-    sciLetter = 'D';
-  } else {
-    sciLetter = 'F';
-  }
-  document.getElementById('sci-letter').innerHTML = sciLetter;
+  document.getElementById('eng-letter').innerHTML = PtL(engPercent)
+  document.getElementById('math-letter').innerHTML = PtL(mathPercent)
+  document.getElementById('soc-letter').innerHTML = PtL(socPercent)
+  document.getElementById('sci-letter').innerHTML = PtL(sciPercent)
 }
 
-function PTL(percentletter){
-
+function PtL(Percentgrade){
+  let letter;
+  if (Percentgrade >= 80) {
+    letter = 'A';
+  } else if (Percentgrade >= 65) {
+    letter = 'B';
+  } else if (Percentgrade >= 55) {
+    letter = 'C';
+  } else if (Percentgrade >= 50) {
+    letter = 'D';
+  } else {
+    letter = 'F';
+  }
+  return letter;
+  
 }
