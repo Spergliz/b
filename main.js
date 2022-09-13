@@ -78,5 +78,16 @@ function btnClicked() {
 }
 
 function Grades(A,B,C,D,){
-
+  let letter;
+  if (A >= 80) {
+    letter = 'A';
+  } else if (A >= 65) {
+    sciLetter = 'B';
+  } else if (C >= 55) {
+    sciLetter = 'C';
+  } else if (D >= 50) {
+    sciLetter = 'D';
+  } else {
+    sciLetter = 'F';
+  }
 }
