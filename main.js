@@ -17,6 +17,10 @@ function btnClicked() {
 
   // Calculate & Output Letter Grades
   // English
+  document.getElementById('eng-letter').innerHTML = PtL(engLetter)
+  document.getElementById('eng-letter').innerHTML = PtL(mathLetter)
+  document.getElementById('eng-letter').innerHTML = PtL(socLetter)
+  document.getElementById('eng-letter').innerHTML = PtL(sciLetter)
   let engLetter;
   if (engPercent >= 80) {
     engLetter = 'A';
@@ -77,17 +81,6 @@ function btnClicked() {
   document.getElementById('sci-letter').innerHTML = sciLetter;
 }
 
-function Grades(A,B,C,D,){
-  let letter;
-  if (A >= 80) {
-    letter = 'A';
-  } else if (A >= 65) {
-    sciLetter = 'B';
-  } else if (C >= 55) {
-    sciLetter = 'C';
-  } else if (D >= 50) {
-    sciLetter = 'D';
-  } else {
-    sciLetter = 'F';
-  }
+function PTL(percentletter){
+
 }
